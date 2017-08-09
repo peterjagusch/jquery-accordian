@@ -1,6 +1,6 @@
-# jquery-accordian
-A small jQuery Accordian plugin
-Easy use, add in jQuery and jquery-accordian.js and initialize with:
+# jquery-accordion
+A small jQuery Accordion plugin
+Easy use, add in jQuery and jquery-accordion.js and initialize with:
 
 $( ".accordion" ).accordion();
 Note:
