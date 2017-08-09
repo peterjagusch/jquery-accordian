@@ -1,3 +1,10 @@
+/**
+ * JQuery Accordion Plugin
+ * Author: Peter Jagusch
+ * Date: 9 August 2017
+ * https://github.com/peterjagusch
+ */
+
 (function($) {
 	$.fn.accordion = function(options) {
 	var defaults = { multiOpen: false, openFirst: true };
