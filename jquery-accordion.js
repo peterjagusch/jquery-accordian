@@ -4,10 +4,9 @@
  * Date: 9 August 2017
  * https://github.com/peterjagusch
  */
-
 (function($) {
 	$.fn.accordion = function(options) {
-	var defaults = { multiOpen: false, openFirst: true };
+	var defaults = { multiOpen: false, openFirst: true, allOpen: false };
 	var settings = $.extend(true, defaults, options);
 	var allPanels = $('.accordion > div.panel-collapse').hide();    
 	  $('.accordion > div > a.panel-title').click(function(e) {
@@ -19,9 +18,8 @@
 		if(!settings.multiOpen){ allPanels.slideUp() }
 		$(this).parent().next().slideDown();		
 	});
-	if(settings.openFirst){
-		$( ".accordion .panel-collapse:first" ).show();
-	}
+	if(settings.openFirst){ $( ".accordion .panel-collapse:first" ).show() }
+	if(settings.allOpen){ $( ".accordion .panel-collapse" ).show() }
   return this; 
 };
 })(jQuery);
